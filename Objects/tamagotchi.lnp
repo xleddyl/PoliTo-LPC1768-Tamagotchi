@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+".\objects\startup_lpc17xx.o"
+".\objects\main.o"
+".\objects\system_lpc17xx.o"
+".\objects\tamagotchi.o"
+".\objects\irq_timer.o"
+".\objects\lib_timer.o"
+".\objects\irq_rit.o"
+".\objects\lib_rit.o"
+".\objects\asciilib_1.o"
+".\objects\glcd_1.o"
+".\objects\hzlib_1.o"
+".\objects\lib_joystick.o"
+".\objects\irq_button.o"
+".\objects\lib_button.o"
+".\objects\funct_led.o"
+".\objects\lib_led.o"
+".\objects\touchpanel.o"
+".\objects\irq_adc.o"
+".\objects\lib_adc.o"
+".\objects\midi.o"
+--strict --scatter ".\Objects\tamagotchi.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\tamagotchi.map" -o .\Objects\tamagotchi.axf
